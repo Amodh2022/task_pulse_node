@@ -43,7 +43,7 @@ app.post("/users", (req, res) => {
     (error, results) => {
       if (error) {
         console.error("Database error:", error);
-        res.status(500).send("Internal Server Error");
+        res.status(500).json({message:"Internal Server Error"});
         return;
       }
 
@@ -61,7 +61,7 @@ app.post("/users", (req, res) => {
                 res.status(409).json({ message: error.code }); // Conflict status code for duplicate entry
               } else {
                 console.error("Database error:", error);
-                res.status(500).send("Internal Server Error");
+                res.status(500).json({message:"Internal Server Error"});
               }
               return;
             }
