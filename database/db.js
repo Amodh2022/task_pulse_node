@@ -1,11 +1,13 @@
 const mysql = require('mysql2');
+var fs = require('fs');
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'Amodh@2000',
+  host: 'dexter.mysql.database.azure.com',
+  user: 'Amodh',
+  password: 'Dexter@2132',
   database: 'task_pulse',
-  port:"3306"
+  port:"3306",
+ 
 });
 
 db.connect((err) => {
