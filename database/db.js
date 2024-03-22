@@ -8,7 +8,7 @@ const db = mysql.createConnection({
   password: 'Dexter@2132',
   database: 'task_pulse',
   port:"3306",
-  ssl: true
+  
 });
 
 db.connect((err) => {
