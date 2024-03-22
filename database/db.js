@@ -1,5 +1,4 @@
 const mysql = require('mysql2');
-import fs from fs;
 
 
 const db = mysql.createConnection({
