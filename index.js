@@ -43,7 +43,7 @@ app.post("/users", (req, res) => {
     (error, results) => {
       if (error) {
         console.error("Database error:", error);
-        res.status(500).json({message:"Internal Server Error"});
+        res.status(500).json({message:"Internal Server Error DataBase"});
         return;
       }
 
