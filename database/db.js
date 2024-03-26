@@ -2,9 +2,9 @@ const mysql = require('mysql2');
 
 
 const db = mysql.createConnection({
-  host: 'dexter.mysql.database.azure.com',
+  host: 'database-1.cfc6wc4ekqmr.eu-north-1.rds.amazonaws.com',
   user: 'Amodh',
-  password: 'Dexter@2132',
+  password: 'Dexter2022',
   database: 'task_pulse',
   port:"3306",
   

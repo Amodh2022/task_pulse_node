@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node index.js",
     "test": "echo \"No test specified\"",
-    "dev": "nodemon index.js",
+    "dev": "node index.js",
     "server": "nodemon index.js"
   },
   "author": "",
